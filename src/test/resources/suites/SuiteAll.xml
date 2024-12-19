@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression Test MPV and Provenue" parallel="methods">
+    
+    
+    
+    <suite-files >
+        <suite-file path="MPV/MPVTestNG.xml"/>
+        <suite-file path="Provenue/PVTestNG.xml"/>
+    </suite-files>
+       
+    
+   <!-- thread-count="${thread.count}"-->
+</suite>

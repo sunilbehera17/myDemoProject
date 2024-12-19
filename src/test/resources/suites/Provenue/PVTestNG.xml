@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="PV test" parallel="methods" >
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+	<test name="PV Login Test" parallel="true">
+		<parameter name="BROWSER" value="chrome" />
+		
+		<classes>
+			<class name="com.tavant.pv.testcases.PVLoginTest"/>
+
+			
+		</classes>
+	</test>
+
+</suite>

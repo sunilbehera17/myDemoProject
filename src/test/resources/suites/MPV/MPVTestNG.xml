@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="MPV test" parallel="methods" >
+
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+
+    <test name="MPV test Suite" parallel="true">
+        <parameter name="BROWSER" value="chrome"/>
+        <classes>
+            <class name="com.tavant.mpv.testcases.MPVLoginTest"/>
+            <class name="com.tavant.mpv.testcases.C122972_ManageFriends_DOB_OptionalFieldValidation"/>
+            <class name="com.tavant.mpv.testcases.C156889_MLBSignUp"/>
+            
+        </classes>
+    </test>
+
+    
+
+</suite>

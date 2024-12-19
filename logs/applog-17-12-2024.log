@@ -1,0 +1,568 @@
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:46:06 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 11:46:06 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is starting...
+[INFO] 17-12-2024 11:46:25 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 11:46:25 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 11:46:25 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text T1ckets1 on Enter Password
+[INFO] 17-12-2024 11:46:52 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:46:59 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[@id='hero']/div[@class='hero-logo mpv-theme-hero-logo-new']
+[INFO] 17-12-2024 11:46:59 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is passed.
+[INFO] 17-12-2024 11:46:59 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (702aa7a4d9535fc8140967ee41f3627c)
+[INFO] 17-12-2024 11:47:00 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginSuccessWithCustomerAccount
+[INFO] 17-12-2024 11:47:00 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/ticketmanagement/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/
+[INFO] 17-12-2024 11:47:00 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:47:00 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 11:47:01 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:47:01 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:47:01 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:47:01 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:47:01 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 11:47:01 [TestNG-test-PV Login Test-2] [LogUtils] - Test case: TC_PVLoginCase3 is starting...
+[INFO] 17-12-2024 11:47:01 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase2 is starting...
+[INFO] 17-12-2024 11:47:01 [TestNG-test-PV Login Test-2] [LogUtils] - Set Excel File: src/test/resources/testdataPV/TestDataPV.xlsx
+[INFO] 17-12-2024 11:47:01 [TestNG-test-PV Login Test-2] [LogUtils] - Sheet Name: PVLogin
+[INFO] 17-12-2024 11:47:01 [TestNG-test-PV Login Test-1] [LogUtils] - Set Excel File: src/test/resources/testdataPV/TestDataPV.xlsx
+[INFO] 17-12-2024 11:47:01 [TestNG-test-PV Login Test-1] [LogUtils] - Sheet Name: PVLogin
+[INFO] 17-12-2024 11:47:05 [TestNG-test-PV Login Test-2] [LogUtils] - Open the Website with URL: https://auto2.provenueapp.com:18443/springapp/login
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Open the Website with URL: https://auto2.provenueapp.com:18443/springapp/login
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Get Page Title: auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Verify Equals: auto2 | Tickets.com Provenue® - Login = auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Get Page Title: auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Clear the text in the textbox. Clear the email field
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Verify Equals: auto2 | Tickets.com Provenue® - Login = auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Clear the text in the textbox. Clear the password
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Column index for EMAIL: 1
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Clear the text in the textbox. Clear the email field
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Clear the text in the textbox. Clear the password
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Column index for EMAIL: 1
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Set text loaduser3 on Enter email
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Column index for PASSWORD: 2
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Set text loaduser3 on Enter email
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Column index for PASSWORD: 2
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-1] [LogUtils] - Set text Password10 on Enter password
+[INFO] 17-12-2024 11:47:06 [TestNG-test-PV Login Test-2] [LogUtils] - Set text Password10 on Enter password
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-1] [LogUtils] - Verify element visible By.xpath: //*[@id='mainHeading']//a[@title='Home']/div
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-2] [LogUtils] - Verify element visible By.xpath: //*[@id='mainHeading']//a[@title='Home']/div
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase2 is passed.
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (1f530e026f10cabdc94a19f85b067abf)
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-2] [LogUtils] - Test case: TC_PVLoginCase3 is passed.
+[INFO] 17-12-2024 11:47:10 [TestNG-test-PV Login Test-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (e6b7bebd44f8922e83dabbb20677f7b9)
+[INFO] 17-12-2024 11:47:11 [TestNG-test-PV Login Test-2] [LogUtils] - Screenshot taken: TC_PVLoginCase3
+[INFO] 17-12-2024 11:47:11 [TestNG-test-PV Login Test-1] [LogUtils] - Screenshot taken: TC_PVLoginCase2
+[INFO] 17-12-2024 11:47:11 [TestNG-test-PV Login Test-1] [LogUtils] - Screenshot taken current URL: https://auto2.provenueapp.com:18443/springapp/homePage
+[INFO] 17-12-2024 11:47:11 [TestNG-test-PV Login Test-2] [LogUtils] - Screenshot taken current URL: https://auto2.provenueapp.com:18443/springapp/homePage
+[INFO] 17-12-2024 11:47:11 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:47:11 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 11:48:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:48:28 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:48:28 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:48:28 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:48:29 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:49:09 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 11:49:09 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is starting...
+[INFO] 17-12-2024 11:49:37 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 11:49:37 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 11:49:37 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 11:49:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 11:49:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 11:49:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 11:49:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 11:49:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 11:49:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 11:49:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 11:49:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 11:49:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 11:49:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 11:49:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text T1ckets1 on Enter Password
+[INFO] 17-12-2024 11:49:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:49:44 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[@id='hero']/div[@class='hero-logo mpv-theme-hero-logo-new']
+[INFO] 17-12-2024 11:49:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is passed.
+[INFO] 17-12-2024 11:49:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (936370180fa3b2d11d1e15a22eb8e156)
+[INFO] 17-12-2024 11:49:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginSuccessWithCustomerAccount
+[INFO] 17-12-2024 11:49:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/ticketmanagement/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/
+[INFO] 17-12-2024 11:49:46 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:49:46 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 11:49:47 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:49:47 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:49:47 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:49:47 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:49:47 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 11:49:47 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase2 is starting...
+[INFO] 17-12-2024 11:49:47 [TestNG-test-PV Login Test-2] [LogUtils] - Test case: TC_PVLoginCase3 is starting...
+[INFO] 17-12-2024 11:49:47 [TestNG-test-PV Login Test-1] [LogUtils] - Set Excel File: src/test/resources/testdataPV/TestDataPV.xlsx
+[INFO] 17-12-2024 11:49:47 [TestNG-test-PV Login Test-2] [LogUtils] - Set Excel File: src/test/resources/testdataPV/TestDataPV.xlsx
+[INFO] 17-12-2024 11:49:47 [TestNG-test-PV Login Test-1] [LogUtils] - Sheet Name: PVLogin
+[INFO] 17-12-2024 11:49:47 [TestNG-test-PV Login Test-2] [LogUtils] - Sheet Name: PVLogin
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Open the Website with URL: https://auto2.provenueapp.com:18443/springapp/login
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Open the Website with URL: https://auto2.provenueapp.com:18443/springapp/login
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Get Page Title: auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Verify Equals: auto2 | Tickets.com Provenue® - Login = auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Get Page Title: auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Verify Equals: auto2 | Tickets.com Provenue® - Login = auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Clear the text in the textbox. Clear the email field
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Clear the text in the textbox. Clear the email field
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Clear the text in the textbox. Clear the password
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Column index for EMAIL: 1
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Clear the text in the textbox. Clear the password
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Column index for EMAIL: 1
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Set text loaduser3 on Enter email
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Set text loaduser3 on Enter email
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Column index for PASSWORD: 2
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Column index for PASSWORD: 2
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-1] [LogUtils] - Set text Password10 on Enter password
+[INFO] 17-12-2024 11:49:52 [TestNG-test-PV Login Test-2] [LogUtils] - Set text Password10 on Enter password
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-2] [LogUtils] - Verify element visible By.xpath: //*[@id='mainHeading']//a[@title='Home']/div
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-1] [LogUtils] - Verify element visible By.xpath: //*[@id='mainHeading']//a[@title='Home']/div
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-2] [LogUtils] - Test case: TC_PVLoginCase3 is passed.
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (7c065577c1bbf8c1141c714678c05f49)
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase2 is passed.
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (489fe9c8b74ca48ed90547e49fcb554e)
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-2] [LogUtils] - Screenshot taken: TC_PVLoginCase3
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-2] [LogUtils] - Screenshot taken current URL: https://auto2.provenueapp.com:18443/springapp/homePage
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-1] [LogUtils] - Screenshot taken: TC_PVLoginCase2
+[INFO] 17-12-2024 11:49:56 [TestNG-test-PV Login Test-1] [LogUtils] - Screenshot taken current URL: https://auto2.provenueapp.com:18443/springapp/homePage
+[INFO] 17-12-2024 11:49:57 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:49:57 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:51:24 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:51:25 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 11:55:03 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:55:03 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:55:03 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:55:03 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:55:04 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 11:55:04 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 11:55:04 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 11:55:04 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:55:04 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 11:55:04 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is starting...
+[INFO] 17-12-2024 11:55:07 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 11:55:07 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 11:55:07 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 11:55:28 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text T1ckets1 on Enter Password
+[INFO] 17-12-2024 11:55:29 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:55:32 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[@id='hero']/div[@class='hero-logo mpv-theme-hero-logo-new']
+[INFO] 17-12-2024 11:55:33 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is passed.
+[INFO] 17-12-2024 11:55:33 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (dfdac7062a11e2554639a356751e19c3)
+[INFO] 17-12-2024 11:55:33 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginSuccessWithCustomerAccount
+[INFO] 17-12-2024 11:55:33 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/ticketmanagement/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 11:55:34 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 11:55:34 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase2 is starting...
+[INFO] 17-12-2024 11:55:34 [TestNG-test-PV Login Test-2] [LogUtils] - Test case: TC_PVLoginCase3 is starting...
+[INFO] 17-12-2024 11:55:34 [TestNG-test-PV Login Test-1] [LogUtils] - Set Excel File: src/test/resources/testdataPV/TestDataPV.xlsx
+[INFO] 17-12-2024 11:55:34 [TestNG-test-PV Login Test-1] [LogUtils] - Sheet Name: PVLogin
+[INFO] 17-12-2024 11:55:34 [TestNG-test-PV Login Test-2] [LogUtils] - Set Excel File: src/test/resources/testdataPV/TestDataPV.xlsx
+[INFO] 17-12-2024 11:55:34 [TestNG-test-PV Login Test-2] [LogUtils] - Sheet Name: PVLogin
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Open the Website with URL: https://auto2.provenueapp.com:18443/springapp/login
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Get Page Title: auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Verify Equals: auto2 | Tickets.com Provenue® - Login = auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Open the Website with URL: https://auto2.provenueapp.com:18443/springapp/login
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Get Page Title: auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Verify Equals: auto2 | Tickets.com Provenue® - Login = auto2 | Tickets.com Provenue® - Login
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Clear the text in the textbox. Clear the email field
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Clear the text in the textbox. Clear the email field
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Clear the text in the textbox. Clear the password
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Column index for EMAIL: 1
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Clear the text in the textbox. Clear the password
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Column index for EMAIL: 1
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Set text loaduser3 on Enter email
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Set text loaduser3 on Enter email
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Row index for testSignInData: 1
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Column index for PASSWORD: 2
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Column index for PASSWORD: 2
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-1] [LogUtils] - Set text Password10 on Enter password
+[INFO] 17-12-2024 11:55:40 [TestNG-test-PV Login Test-2] [LogUtils] - Set text Password10 on Enter password
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-1] [LogUtils] - Verify element visible By.xpath: //*[@id='mainHeading']//a[@title='Home']/div
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-2] [LogUtils] - Verify element visible By.xpath: //*[@id='mainHeading']//a[@title='Home']/div
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase2 is passed.
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (2188d68c25dad8399ac8ef54461a2da3)
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-2] [LogUtils] - Test case: TC_PVLoginCase3 is passed.
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (47440211535d65224f95a84d6a90272c)
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-1] [LogUtils] - Screenshot taken: TC_PVLoginCase2
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-1] [LogUtils] - Screenshot taken current URL: https://auto2.provenueapp.com:18443/springapp/homePage
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-2] [LogUtils] - Screenshot taken: TC_PVLoginCase3
+[INFO] 17-12-2024 11:55:44 [TestNG-test-PV Login Test-2] [LogUtils] - Screenshot taken current URL: https://auto2.provenueapp.com:18443/springapp/homePage
+[INFO] 17-12-2024 11:55:44 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 11:55:44 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 12:37:59 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:37:59 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 12:37:59 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:37:59 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:37:59 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 12:37:59 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 12:38:00 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 12:38:00 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:38:00 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 12:38:00 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithIncorrectPassword is starting...
+[INFO] 17-12-2024 12:38:00 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithEmailDoesNotExist is starting...
+[INFO] 17-12-2024 12:38:00 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithEmailNull is starting...
+[INFO] 17-12-2024 12:38:03 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:38:03 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:38:03 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:38:31 [TestNG-test-MPV test Suite-3] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:38:31 [TestNG-test-MPV test Suite-3] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:38:31 [TestNG-test-MPV test Suite-3] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithIncorrectPassword: 3
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:38:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify Equals: Enter Email Address = Enter Email Address
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithEmailDoesNotExist: 1
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunilsdaskdas8765@fake.com on Enter email
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithEmailDoesNotExist: 1
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithIncorrectPassword: 3
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text 123.0 on Enter Password
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text 123.0 on Enter Password
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Your username or password is incorrect.']
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Your username or password is incorrect.']
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithEmailNull is passed.
+[INFO] 17-12-2024 12:38:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (6dc2d0942b5361cbc2b21c8ca86e744f)
+[INFO] 17-12-2024 12:38:46 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken: TC_LoginFailWithEmailNull
+[INFO] 17-12-2024 12:38:46 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:38:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithIncorrectPassword is passed.
+[INFO] 17-12-2024 12:38:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (8e29f928a097f3960fecab2d9c87ac0f)
+[INFO] 17-12-2024 12:38:47 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithEmailDoesNotExist is passed.
+[INFO] 17-12-2024 12:38:47 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (62123fe47a1537259f15cdb5ade9cbe4)
+[INFO] 17-12-2024 12:38:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken: TC_LoginFailWithIncorrectPassword
+[INFO] 17-12-2024 12:38:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:38:48 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginFailWithEmailDoesNotExist
+[INFO] 17-12-2024 12:38:48 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:38:48 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithNullPassword is starting...
+[INFO] 17-12-2024 12:38:51 [TestNG-test-MPV test Suite-3] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:38:51 [TestNG-test-MPV test Suite-3] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:38:51 [TestNG-test-MPV test Suite-3] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithNullPassword: 2
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:39:06 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element present By.xpath: //*[normalize-space() = 'Enter Password']
+[INFO] 17-12-2024 12:39:07 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithNullPassword is passed.
+[INFO] 17-12-2024 12:39:07 [TestNG-test-MPV test Suite-3] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (d624e2eb8d59ce54d30365a699deebf6)
+[INFO] 17-12-2024 12:39:08 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken: TC_LoginFailWithNullPassword
+[INFO] 17-12-2024 12:39:08 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:39:08 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 12:39:08 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 12:39:09 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 12:39:09 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:39:09 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:39:09 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:39:09 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 12:39:09 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase1 is starting...
+[WARN] 17-12-2024 12:39:09 [TestNG-test-PV Login Test-1] [LogUtils] - WARNING!! Test case: TC_PVLoginCase1 is skipped.
+[INFO] 17-12-2024 12:39:10 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 12:39:10 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 12:41:17 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:41:17 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 12:41:17 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:41:17 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:41:18 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 12:41:18 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 12:41:18 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 12:41:18 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:41:18 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 12:41:18 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithEmailNull is starting...
+[INFO] 17-12-2024 12:41:18 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithEmailDoesNotExist is starting...
+[INFO] 17-12-2024 12:41:18 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithIncorrectPassword is starting...
+[INFO] 17-12-2024 12:41:21 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:41:21 [TestNG-test-MPV test Suite-2] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:41:21 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:41:21 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:41:21 [TestNG-test-MPV test Suite-2] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:41:21 [TestNG-test-MPV test Suite-2] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithEmailDoesNotExist: 1
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunilsdaskdas8765@fake.com on Enter email
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithEmailDoesNotExist: 1
+[INFO] 17-12-2024 12:41:36 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:41:37 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text 123456.0 on Enter Password
+[INFO] 17-12-2024 12:41:37 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:41:37 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Your username or password is incorrect.']
+[INFO] 17-12-2024 12:41:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithEmailDoesNotExist is passed.
+[INFO] 17-12-2024 12:41:38 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (fe584b2de9c538e6c07b29aa82d8ce22)
+[INFO] 17-12-2024 12:41:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginFailWithEmailDoesNotExist
+[INFO] 17-12-2024 12:41:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:41:39 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithNullPassword is starting...
+[INFO] 17-12-2024 12:41:42 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:41:42 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:41:42 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:41:42 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:41:42 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:41:42 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify Equals: Enter Email Address = Enter Email Address
+[INFO] 17-12-2024 12:41:43 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithEmailNull is passed.
+[INFO] 17-12-2024 12:41:43 [TestNG-test-MPV test Suite-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (e3db79508062f5912606af6d700ae90e)
+[INFO] 17-12-2024 12:41:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken: TC_LoginFailWithEmailNull
+[INFO] 17-12-2024 12:41:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:41:44 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is starting...
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithIncorrectPassword: 3
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithIncorrectPassword: 3
+[INFO] 17-12-2024 12:41:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:41:48 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text 123.0 on Enter Password
+[INFO] 17-12-2024 12:41:48 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:41:48 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Your username or password is incorrect.']
+[INFO] 17-12-2024 12:41:50 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithIncorrectPassword is passed.
+[INFO] 17-12-2024 12:41:50 [TestNG-test-MPV test Suite-3] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (459c6eaa4df564588a045c57ad1cb4a0)
+[INFO] 17-12-2024 12:41:50 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken: TC_LoginFailWithIncorrectPassword
+[INFO] 17-12-2024 12:41:50 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:41:52 [TestNG-test-MPV test Suite-2] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:41:52 [TestNG-test-MPV test Suite-2] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:41:52 [TestNG-test-MPV test Suite-2] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithNullPassword: 2
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:41:57 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element present By.xpath: //*[normalize-space() = 'Enter Password']
+[INFO] 17-12-2024 12:41:58 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithNullPassword is passed.
+[INFO] 17-12-2024 12:41:58 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (7b68b66fc36fe27a14e796e66ca7ec87)
+[INFO] 17-12-2024 12:41:59 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginFailWithNullPassword
+[INFO] 17-12-2024 12:41:59 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:42:01 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:42:01 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:42:01 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:42:01 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:42:01 [TestNG-test-MPV test Suite-2] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 12:42:01 [TestNG-test-MPV test Suite-2] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:42:02 [TestNG-test-MPV test Suite-2] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:42:02 [TestNG-test-MPV test Suite-2] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 12:42:02 [TestNG-test-MPV test Suite-2] [LogUtils] - Row index for loginSuccessWithCustomerAccount: 4
+[INFO] 17-12-2024 12:42:02 [TestNG-test-MPV test Suite-2] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:42:02 [TestNG-test-MPV test Suite-2] [LogUtils] - Set text T1ckets1 on Enter Password
+[INFO] 17-12-2024 12:42:02 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:42:08 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element visible By.xpath: //*[@id='hero']/div[@class='hero-logo mpv-theme-hero-logo-new']
+[INFO] 17-12-2024 12:42:08 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginSuccessWithCustomerAccount is passed.
+[INFO] 17-12-2024 12:42:08 [TestNG-test-MPV test Suite-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (f6f38e855c7832117008a4bef36645b4)
+[INFO] 17-12-2024 12:42:09 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken: TC_LoginSuccessWithCustomerAccount
+[INFO] 17-12-2024 12:42:09 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/ticketmanagement/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 12:42:09 [main] [LogUtils] - =====> End Suite: PV test
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - OVERRIDE EXTENT REPORTS = yes
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - Report Path: /Users/sunilkumarbehera/Library/CloudStorage/OneDrive-TavantTechnologies/Desktop/prodemo/Framework/reports/ExtentReports/ExtentReports.html
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - Extent Reports initialized.
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:44:12 [main] [LogUtils] - =====> Starting Suite: MPV test
+[INFO] 17-12-2024 12:44:12 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithEmailNull is starting...
+[INFO] 17-12-2024 12:44:12 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithIncorrectPassword is starting...
+[INFO] 17-12-2024 12:44:12 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithEmailDoesNotExist is starting...
+[INFO] 17-12-2024 12:44:16 [TestNG-test-MPV test Suite-2] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:44:16 [TestNG-test-MPV test Suite-2] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:44:16 [TestNG-test-MPV test Suite-2] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:44:16 [TestNG-test-MPV test Suite-3] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:44:16 [TestNG-test-MPV test Suite-3] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:44:16 [TestNG-test-MPV test Suite-3] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:44:34 [TestNG-test-MPV test Suite-1] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:44:34 [TestNG-test-MPV test Suite-1] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:44:34 [TestNG-test-MPV test Suite-1] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify Equals: Enter Email Address = Enter Email Address
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:44:45 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithEmailDoesNotExist: 1
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text sunilsdaskdas8765@fake.com on Enter email
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Row index for loginFailWithEmailDoesNotExist: 1
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithEmailNull is passed.
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (cc774d99457e8921bd9496b3b3943846)
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithIncorrectPassword: 3
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Set text 123456.0 on Enter Password
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-1] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Your username or password is incorrect.']
+[INFO] 17-12-2024 12:44:46 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Clear the text in the textbox. Clear the Password Field
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Row index for loginFailWithIncorrectPassword: 3
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Column index for password: 2
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Set text 123.0 on Enter Password
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-3] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Your username or password is incorrect.']
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken: TC_LoginFailWithEmailNull
+[INFO] 17-12-2024 12:44:47 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:44:48 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithNullPassword is starting...
+[INFO] 17-12-2024 12:44:48 [TestNG-test-MPV test Suite-1] [LogUtils] - Test case: TC_LoginFailWithEmailDoesNotExist is passed.
+[INFO] 17-12-2024 12:44:48 [TestNG-test-MPV test Suite-1] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (1e3b9b5af64f6ee5eed885c16e733514)
+[INFO] 17-12-2024 12:44:49 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken: TC_LoginFailWithEmailDoesNotExist
+[INFO] 17-12-2024 12:44:49 [TestNG-test-MPV test Suite-1] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:44:49 [TestNG-test-MPV test Suite-3] [LogUtils] - Test case: TC_LoginFailWithIncorrectPassword is passed.
+[INFO] 17-12-2024 12:44:49 [TestNG-test-MPV test Suite-3] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (2da50931508b9eb54627215ac5442e43)
+[INFO] 17-12-2024 12:44:49 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken: TC_LoginFailWithIncorrectPassword
+[INFO] 17-12-2024 12:44:49 [TestNG-test-MPV test Suite-3] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:44:50 [TestNG-test-MPV test Suite-2] [LogUtils] - Open the Website with URL: https://mlbauto.tickets.com/?agency=AUMS_MLB_MPV&enableV2TicketingExperience=true&orgid=24610
+[INFO] 17-12-2024 12:44:50 [TestNG-test-MPV test Suite-2] [LogUtils] - Set Excel File: src/test/resources/testdataMPV/TestDataMPV.xlsx
+[INFO] 17-12-2024 12:44:50 [TestNG-test-MPV test Suite-2] [LogUtils] - Sheet Name: Login
+[INFO] 17-12-2024 12:45:05 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Close Cookies
+[INFO] 17-12-2024 12:45:05 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Menu
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Hamburger Login
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element visible By.xpath: //*[normalize-space() = 'Log in or sign up to create an account to access your tickets and account.']
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Row index for loginFailWithNullPassword: 2
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Column index for email: 1
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Set text sunil.kumar06@fake.com on Enter email
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Clicked on the Login Button
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Verify element present By.xpath: //*[normalize-space() = 'Enter Password']
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Test case: TC_LoginFailWithNullPassword is passed.
+[INFO] 17-12-2024 12:45:06 [TestNG-test-MPV test Suite-2] [LogUtils] - Driver for Screenshot: ChromeDriver: chrome on mac (7a2edc1ba4278c09d45dc47dec4fc698)
+[INFO] 17-12-2024 12:45:07 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken: TC_LoginFailWithNullPassword
+[INFO] 17-12-2024 12:45:07 [TestNG-test-MPV test Suite-2] [LogUtils] - Screenshot taken current URL: https://mlbauto.tickets.com/?agency=AUMM_MYTIXX&enableV2TicketingExperience=true&orgid=24611#/auth/login?ret=auth~2Flogin%3Ffullret%3D%252Fticketmanagement%252F%253Fagency%253DAUMM_MYTIXX%2526enableV2TicketingExperience%253Dtrue%2526orgid%253D24611&fullret=~2Fticketmanagement~2F%3Fagency%3DAUMM_MYTIXX%26enableV2TicketingExperience%3Dtrue%26orgid%3D24611
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - =====> End Suite: MPV test
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - ********** RUN STARTED **********
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - ========= INSTALLING CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - Loaded all properties files.
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - ========= INSTALLED CONFIGURATION DATA =========
+[INFO] 17-12-2024 12:45:08 [main] [LogUtils] - =====> Starting Suite: PV test
+[INFO] 17-12-2024 12:45:08 [TestNG-test-PV Login Test-1] [LogUtils] - Test case: TC_PVLoginCase1 is starting...
+[WARN] 17-12-2024 12:45:08 [TestNG-test-PV Login Test-1] [LogUtils] - WARNING!! Test case: TC_PVLoginCase1 is skipped.
+[INFO] 17-12-2024 12:45:10 [main] [LogUtils] - ********** RUN FINISHED **********
+[INFO] 17-12-2024 12:45:10 [main] [LogUtils] - =====> End Suite: PV test

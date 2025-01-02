@@ -2,9 +2,16 @@
 
 <suite name="MPV test" parallel="methods" >
 
-    <listeners>
+    <!--<listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>-->
+
+    <testng>
+    <listeners>
+        <listener class-name="com.tavant.listeners.TestListener"/>
     </listeners>
+    <!-- Other configurations -->
+</testng>
 
     <test name="MPV test Suite" parallel="true">
         <parameter name="BROWSER" value="chrome"/>

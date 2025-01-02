@@ -461,6 +461,7 @@
             <!-- You can add more suite files if needed -->
             <!--<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>-->
         </suiteXmlFiles>
+             <argLine>-Djava.awt.headless=true</argLine>
 
         <!-- Java Agent configuration for AspectJ Weaving (if used) -->
         <argLine>

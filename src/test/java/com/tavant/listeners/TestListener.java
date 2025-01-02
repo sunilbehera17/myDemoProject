@@ -15,6 +15,7 @@ import com.tavant.report.ExtentTestManager;
 import com.tavant.utils.BrowserInfoUtils;
 import com.tavant.utils.LogUtils;
 import com.tavant.utils.ZipUtils;
+
 import org.testng.*;
 
 import java.awt.*;
@@ -32,13 +33,15 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     private ScreenRecorderHelpers screenRecorder;
 
     public TestListener() {
-        try {
-            // Check if the environment is headless before initializing the screen recorder
-            if (!GraphicsEnvironment.isHeadless()) {
+        // Check if the environment is headless and initialize the screen recorder only if not
+        if (!GraphicsEnvironment.isHeadless()) {
+            try {
                 screenRecorder = new ScreenRecorderHelpers();
+            } catch (IOException | AWTException e) {
+                LogUtils.error("Error initializing ScreenRecorderHelpers: " + e.getMessage());
             }
-        } catch (IOException | AWTException e) {
-            LogUtils.error("Error initializing ScreenRecorderHelpers: " + e.getMessage());
+        } else {
+            LogUtils.info("Headless environment detected, screen recording will be skipped.");
         }
     }
 
@@ -76,7 +79,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     public void onFinish(ISuite iSuite) {
         LogUtils.info("********** RUN FINISHED **********");
         LogUtils.info("=====> End Suite: " + iSuite.getName());
-        
+
         ExtentReportManager.flushReports();
         ZipUtils.zipReportFolder();
     }
@@ -105,6 +108,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         ExtentReportManager.addCategories(getCategoryType(iTestResult));
         ExtentReportManager.addDevices();
 
+        // Start screen recording if environment is not headless
         if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
             try {
                 screenRecorder.startRecording(getTestName(iTestResult));
@@ -128,6 +132,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
         ExtentReportManager.logMessage(Status.PASS, "Test case: " + getTestName(iTestResult) + " is passed.");
 
+        // Stop screen recording if environment is not headless
         if (VIDEO_RECORD.trim().toLowerCase().equals(YES) && screenRecorder != null) {
             WebUI.sleep(2);
             try {
@@ -152,6 +157,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
         ExtentReportManager.logMessage(Status.FAIL, iTestResult.getThrowable().toString());
 
+        // Stop screen recording if environment is not headless
         if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
             WebUI.sleep(2);
             try {
@@ -173,6 +179,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
         ExtentReportManager.logMessage(Status.SKIP, "Test case: " + getTestName(iTestResult) + " is skipped.");
 
+        // Stop screen recording if environment is not headless
         if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
             try {
                 screenRecorder.stopRecording(true);

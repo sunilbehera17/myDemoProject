@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      
   pull_request:
     branches:
       - main
@@ -29,6 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: 'maven'
 
+    # Step 3: Cache Maven dependencies
     - name: Cache Maven dependencies
       uses: actions/cache@v2
       with:
@@ -37,7 +37,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    # Step 3: Create settings.xml
+    # Step 4: Create settings.xml for Maven deployment
     - name: Create settings.xml
       run: |
         mkdir -p ~/.m2
@@ -53,16 +53,16 @@ jobs:
         </settings>
         EOF
 
-    # Step 4: Build with Maven
+    # Step 5: Build the project with Maven
     - name: Build with Maven
       run: mvn clean install
 
-    # Step 5: Publish to GitHub Packages
+    # Step 6: Publish to GitHub Packages (if needed)
     - name: Publish to GitHub Packages
       run: mvn deploy -s ~/.m2/settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITH_TOKEN }}
-        
-        
-    - name: Build and install dependencies
-      run: mvn clean install
+
+    # Step 7: Run the tests (the build step will include tests)
+    - name: Run Tests with Maven
+      run: mvn test -e -X

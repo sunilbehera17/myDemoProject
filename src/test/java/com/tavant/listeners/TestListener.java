@@ -19,7 +19,6 @@ import com.tavant.utils.ZipUtils;
 import org.testng.*;
 
 import java.awt.*;
-import java.io.IOException;
 
 import static com.tavant.constants.FrameworkConstants.*;
 
@@ -37,7 +36,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         if (!GraphicsEnvironment.isHeadless()) {
             try {
                 screenRecorder = new ScreenRecorderHelpers();
-            } catch (IOException | AWTException e) {
+            } catch (AWTException e) {
                 LogUtils.error("Error initializing ScreenRecorderHelpers: " + e.getMessage());
             }
         } else {

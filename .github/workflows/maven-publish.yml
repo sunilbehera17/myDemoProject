@@ -1,7 +1,11 @@
-name: Maven Package
+name: Java Maven CI
 
 on:
   push:
+    branches:
+      - main
+      
+  pull_request:
     branches:
       - main
 
@@ -24,6 +28,14 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: 'maven'
+
+    - name: Cache Maven dependencies
+      uses: actions/cache@v2
+      with:
+        path: ~/.m2/repository
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
 
     # Step 3: Create settings.xml
     - name: Create settings.xml
@@ -50,3 +62,7 @@ jobs:
       run: mvn deploy -s ~/.m2/settings.xml
       env:
         GITHUB_TOKEN: ${{ secrets.GITH_TOKEN }}
+        
+        
+    - name: Build and install dependencies
+      run: mvn clean install

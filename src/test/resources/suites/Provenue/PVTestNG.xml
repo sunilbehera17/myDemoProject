@@ -2,8 +2,13 @@
 
 <suite name="PV test" parallel="methods" >
 
-    <listeners>
+    <!--<listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>-->
+
+    <testng>
+    <listeners>
+        <listener class-name="com.tavant.listeners.TestListener"/>
     </listeners>
 
 	<test name="PV Login Test" parallel="true">

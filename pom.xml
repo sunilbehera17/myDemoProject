@@ -478,8 +478,11 @@
 
         <!-- Optional: Register TestNG listeners here if needed (testListener can be passed programmatically) -->
         <properties>
-            <listener.class>com.tavant.listeners.TestListener</listener.class>
-        </properties>
+                <property>
+                    <name>listener.class</name>
+                    <value>com.tavant.listeners.TestListener</value>
+                </property>
+            </properties>
 
         <!-- Ensure that the listener is registered in the testng.xml if necessary -->
         <!-- You can also use <listeners> tag in your TestNG suite xml -->

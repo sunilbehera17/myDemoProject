@@ -15,13 +15,12 @@ import com.tavant.report.ExtentTestManager;
 import com.tavant.utils.BrowserInfoUtils;
 import com.tavant.utils.LogUtils;
 import com.tavant.utils.ZipUtils;
-
 import org.testng.*;
-
-import static com.tavant.constants.FrameworkConstants.*;
 
 import java.awt.*;
 import java.io.IOException;
+
+import static com.tavant.constants.FrameworkConstants.*;
 
 public class TestListener implements ITestListener, ISuiteListener, IInvokedMethodListener {
 
@@ -34,9 +33,12 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
     public TestListener() {
         try {
-            screenRecorder = new ScreenRecorderHelpers();
+            // Check if the environment is headless before initializing the screen recorder
+            if (!GraphicsEnvironment.isHeadless()) {
+                screenRecorder = new ScreenRecorderHelpers();
+            }
         } catch (IOException | AWTException e) {
-            System.out.println(e.getMessage());
+            LogUtils.error("Error initializing ScreenRecorderHelpers: " + e.getMessage());
         }
     }
 
@@ -51,25 +53,17 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     @Override
     public void beforeInvocation(IInvokedMethod method, ITestResult testResult) {
         // Before every method in the Test Class
-        //System.out.println(method.getTestMethod().getMethodName());
     }
 
     @Override
     public void afterInvocation(IInvokedMethod method, ITestResult testResult) {
         // After every method in the Test Class
-        //System.out.println(method.getTestMethod().getMethodName());
     }
 
     @Override
     public void onStart(ISuite iSuite) {
         LogUtils.info("********** RUN STARTED **********");
         LogUtils.info("========= INSTALLING CONFIGURATION DATA =========");
-//        try {
-//            FileUtils.deleteDirectory(new File("target/allure-results"));
-//            System.out.println("Deleted Directory target/allure-results");
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        }
 
         PropertiesHelpers.loadAllFiles();
         AllureManager.setAllureEnvironmentInformation();
@@ -82,28 +76,23 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     public void onFinish(ISuite iSuite) {
         LogUtils.info("********** RUN FINISHED **********");
         LogUtils.info("=====> End Suite: " + iSuite.getName());
-        //End Suite and execute Extents Report
-        ExtentReportManager.flushReports();
-        //Zip Folder report
-        ZipUtils.zipReportFolder();
         
-
+        ExtentReportManager.flushReports();
+        ZipUtils.zipReportFolder();
     }
 
     public AuthorType[] getAuthorType(ITestResult iTestResult) {
         if (iTestResult.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class) == null) {
             return null;
         }
-        AuthorType authorType[] = iTestResult.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).author();
-        return authorType;
+        return iTestResult.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).author();
     }
 
     public CategoryType[] getCategoryType(ITestResult iTestResult) {
         if (iTestResult.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class) == null) {
             return null;
         }
-        CategoryType categoryType[] = iTestResult.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).category();
-        return categoryType;
+        return iTestResult.getMethod().getConstructorOrMethod().getMethod().getAnnotation(FrameworkAnnotation.class).category();
     }
 
     @Override
@@ -115,15 +104,16 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         ExtentReportManager.addAuthors(getAuthorType(iTestResult));
         ExtentReportManager.addCategories(getCategoryType(iTestResult));
         ExtentReportManager.addDevices();
-        //ExtentReportManager.info(BrowserInfoUtils.getOSInfo());
 
-        if (VIDEO_RECORD.toLowerCase().trim().equals(YES)) {
-            screenRecorder.startRecording(getTestName(iTestResult));
+        if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
+            try {
+                screenRecorder.startRecording(getTestName(iTestResult));
+            } catch (IOException | AWTException e) {
+                LogUtils.error("Unable to start screen recording: " + e.getMessage());
+            }
         }
-        
-        ExtentReportManager.info("Total test cases started: " + count_totalTCs);
+
         ExtentTestManager.setTotalTestCaseCount(count_totalTCs);
-        
     }
 
     @Override
@@ -138,9 +128,13 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
         ExtentReportManager.logMessage(Status.PASS, "Test case: " + getTestName(iTestResult) + " is passed.");
 
-        if (VIDEO_RECORD.trim().toLowerCase().equals(YES)) {
+        if (VIDEO_RECORD.trim().toLowerCase().equals(YES) && screenRecorder != null) {
             WebUI.sleep(2);
-            screenRecorder.stopRecording(true);
+            try {
+                screenRecorder.stopRecording(true);
+            } catch (IOException e) {
+                LogUtils.error("Unable to stop screen recording: " + e.getMessage());
+            }
         }
     }
 
@@ -158,9 +152,13 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
         ExtentReportManager.logMessage(Status.FAIL, iTestResult.getThrowable().toString());
 
-        if (VIDEO_RECORD.toLowerCase().trim().equals(YES)) {
+        if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
             WebUI.sleep(2);
-            screenRecorder.stopRecording(true);
+            try {
+                screenRecorder.stopRecording(true);
+            } catch (IOException e) {
+                LogUtils.error("Unable to stop screen recording: " + e.getMessage());
+            }
         }
     }
 
@@ -175,8 +173,12 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
 
         ExtentReportManager.logMessage(Status.SKIP, "Test case: " + getTestName(iTestResult) + " is skipped.");
 
-        if (VIDEO_RECORD.toLowerCase().trim().equals(YES)) {
-            screenRecorder.stopRecording(true);
+        if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
+            try {
+                screenRecorder.stopRecording(true);
+            } catch (IOException e) {
+                LogUtils.error("Unable to stop screen recording: " + e.getMessage());
+            }
         }
     }
 
@@ -184,5 +186,4 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {
         ExtentReportManager.logMessage("Test failed but it is in defined success ratio: " + getTestName(iTestResult));
     }
-
 }

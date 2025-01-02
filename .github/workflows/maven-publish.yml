@@ -1,4 +1,4 @@
-name: Java Maven CI
+name: Selenium Maven TestNG Automation
 
 on:
   push:
@@ -9,26 +9,28 @@ on:
       - main
 
 jobs:
-  build:
+  selenium-tests:
     runs-on: ubuntu-latest
+    
     permissions:
       contents: read
       packages: write
-
+      actions: read
+    
     steps:
-    # Step 1: Checkout code
+    
+    # Step 1: Checkout the code from the repository
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # Step 2: Set up JDK 17
+    # Step 2: Set up Java (Java 17 in this example)
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
         java-version: '17'
         distribution: 'temurin'
-        cache: 'maven'
 
-    # Step 3: Cache Maven dependencies
+    # Step 3: Cache Maven dependencies to speed up builds
     - name: Cache Maven dependencies
       uses: actions/cache@v2
       with:
@@ -37,32 +39,21 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-maven-
 
-    # Step 4: Create settings.xml for Maven deployment
-    - name: Create settings.xml
-      run: |
-        mkdir -p ~/.m2
-        cat <<EOF > ~/.m2/settings.xml
-        <settings>
-          <servers>
-            <server>
-              <id>github</id>
-              <username>${{ secrets.GITHUB_ACTOR }}</username>
-              <password>${{ secrets.GITH_TOKEN }}</password>
-            </server>
-          </servers>
-        </settings>
-        EOF
+    # Step 4: Install dependencies and build the project
+    - name: Build the project with Maven
+      run: mvn clean install -DskipTests=true
 
-    # Step 5: Build the project with Maven
-    - name: Build with Maven
-      run: mvn clean install
-
-    # Step 6: Publish to GitHub Packages (if needed)
-    - name: Publish to GitHub Packages
-      run: mvn deploy -s ~/.m2/settings.xml
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITH_TOKEN }}
-
-    # Step 7: Run the tests (the build step will include tests)
-    - name: Run Tests with Maven
+    # Step 5: Run Selenium tests using Maven and TestNG
+    - name: Run Selenium Tests with Maven
       run: mvn test -e -X
+
+    # Step 6: Upload test reports as artifacts (optional)
+    - name: Upload Test Reports as Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: testng-reports
+        path: target/surefire-reports/
+        
+    # Step 7: Clean up (optional, but recommended for large projects)
+    - name: Clean up environment
+      run: mvn clean

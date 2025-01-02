@@ -447,25 +447,44 @@
                 
 
                 <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>${maven-surefire-plugin.version}</version>
-                    <configuration>
-                    	<threadCount>${threadCount}</threadCount>
-                        <suiteXmlFiles>
-                            <!--<suiteXmlFile>${suite.all}</suiteXmlFile>-->
-                            <suiteXmlFile>src/test/resources/suites/SuiteAll.xml</suiteXmlFile>
-                            <!--<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>-->
-                        </suiteXmlFiles>
-                        <argLine>
-                            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
-                        </argLine>
-                        <testFailureIgnore>${maven.test.failure.ignore}</testFailureIgnore>
-                        <systemPropertyVariables>
-                            <allure.results.directory>target/allure-results</allure.results.directory>
-                        </systemPropertyVariables>
-                    </configuration>
-                </plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>${maven-surefire-plugin.version}</version>
+    <configuration>
+        <!-- Set the number of threads for parallel test execution -->
+        <threadCount>${threadCount}</threadCount>
+
+        <!-- Specify the TestNG suite XML file(s) -->
+        <suiteXmlFiles>
+            <!-- Ensure the SuiteAll.xml file exists at the specified location -->
+            <suiteXmlFile>src/test/resources/suites/SuiteAll.xml</suiteXmlFile>
+            <!-- You can add more suite files if needed -->
+            <!--<suiteXmlFile>src/test/resources/suites/${suiteXmlFile}</suiteXmlFile>-->
+        </suiteXmlFiles>
+
+        <!-- Java Agent configuration for AspectJ Weaving (if used) -->
+        <argLine>
+            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectjweaver.version}/aspectjweaver-${aspectjweaver.version}.jar"
+        </argLine>
+
+        <!-- Ignore test failures if needed -->
+        <testFailureIgnore>${maven.test.failure.ignore}</testFailureIgnore>
+
+        <!-- System property variables for Allure results (if using Allure) -->
+        <systemPropertyVariables>
+            <allure.results.directory>target/allure-results</allure.results.directory>
+        </systemPropertyVariables>
+
+        <!-- Optional: Register TestNG listeners here if needed (testListener can be passed programmatically) -->
+        <properties>
+            <listener.class>com.tavant.listeners.TestListener</listener.class>
+        </properties>
+
+        <!-- Ensure that the listener is registered in the testng.xml if necessary -->
+        <!-- You can also use <listeners> tag in your TestNG suite xml -->
+    </configuration>
+</plugin>
+
 
                 <plugin>
                     <groupId>io.qameta.allure</groupId>

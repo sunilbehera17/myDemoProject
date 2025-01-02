@@ -98,95 +98,96 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
     }
 
     @Override
-    public void onTestStart(ITestResult iTestResult) {
-        LogUtils.info("Test case: " + getTestName(iTestResult) + " is starting...");
-        count_totalTCs = count_totalTCs + 1;
+public void onTestStart(ITestResult iTestResult) {
+    LogUtils.info("Test case: " + getTestName(iTestResult) + " is starting...");
+    count_totalTCs = count_totalTCs + 1;
 
-        ExtentReportManager.createTest(iTestResult.getName());
-        ExtentReportManager.addAuthors(getAuthorType(iTestResult));
-        ExtentReportManager.addCategories(getCategoryType(iTestResult));
-        ExtentReportManager.addDevices();
+    ExtentReportManager.createTest(iTestResult.getName());
+    ExtentReportManager.addAuthors(getAuthorType(iTestResult));
+    ExtentReportManager.addCategories(getCategoryType(iTestResult));
+    ExtentReportManager.addDevices();
 
-        // Start screen recording if environment is not headless
-        if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
-            try {
-                screenRecorder.startRecording(getTestName(iTestResult));
-            } catch (IOException e) {
-                LogUtils.error("Unable to start screen recording: " + e.getMessage());
-            }
-        }
-
-        ExtentTestManager.setTotalTestCaseCount(count_totalTCs);
-    }
-
-    @Override
-    public void onTestSuccess(ITestResult iTestResult) {
-        LogUtils.info("Test case: " + getTestName(iTestResult) + " is passed.");
-        count_passedTCs = count_passedTCs + 1;
-
-        if (SCREENSHOT_PASSED_TCS.equals(YES)) {
-            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
-            ExtentReportManager.addScreenShot(Status.PASS, getTestName(iTestResult));
-        }
-
-        ExtentReportManager.logMessage(Status.PASS, "Test case: " + getTestName(iTestResult) + " is passed.");
-
-        // Stop screen recording if environment is not headless
-        if (VIDEO_RECORD.trim().toLowerCase().equals(YES) && screenRecorder != null) {
-            WebUI.sleep(2);
-            try {
-                screenRecorder.stopRecording(true);
-            } catch (IOException e) {
-                LogUtils.error("Unable to stop screen recording: " + e.getMessage());
-            }
+    // Start screen recording if environment is not headless
+    if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
+        try {
+            screenRecorder.startRecording(getTestName(iTestResult)); // AWTException is the only possible exception
+        } catch (AWTException e) {
+            LogUtils.error("Unable to start screen recording: " + e.getMessage());
         }
     }
 
-    @Override
-    public void onTestFailure(ITestResult iTestResult) {
-        LogUtils.error("FAILED !! Test case " + getTestName(iTestResult) + " is failed.");
-        LogUtils.error(iTestResult.getThrowable());
+    ExtentTestManager.setTotalTestCaseCount(count_totalTCs);
+}
 
-        count_failedTCs = count_failedTCs + 1;
+@Override
+public void onTestSuccess(ITestResult iTestResult) {
+    LogUtils.info("Test case: " + getTestName(iTestResult) + " is passed.");
+    count_passedTCs = count_passedTCs + 1;
 
-        if (SCREENSHOT_FAILED_TCS.equals(YES)) {
-            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
-            ExtentReportManager.addScreenShot(Status.FAIL, getTestName(iTestResult));
-        }
-
-        ExtentReportManager.logMessage(Status.FAIL, iTestResult.getThrowable().toString());
-
-        // Stop screen recording if environment is not headless
-        if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
-            WebUI.sleep(2);
-            try {
-                screenRecorder.stopRecording(true);
-            } catch (IOException e) {
-                LogUtils.error("Unable to stop screen recording: " + e.getMessage());
-            }
-        }
+    if (SCREENSHOT_PASSED_TCS.equals(YES)) {
+        CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+        ExtentReportManager.addScreenShot(Status.PASS, getTestName(iTestResult));
     }
 
-    @Override
-    public void onTestSkipped(ITestResult iTestResult) {
-        LogUtils.warn("WARNING!! Test case: " + getTestName(iTestResult) + " is skipped.");
-        count_skippedTCs = count_skippedTCs + 1;
+    ExtentReportManager.logMessage(Status.PASS, "Test case: " + getTestName(iTestResult) + " is passed.");
 
-        if (SCREENSHOT_SKIPPED_TCS.equals(YES)) {
-            CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
-        }
-
-        ExtentReportManager.logMessage(Status.SKIP, "Test case: " + getTestName(iTestResult) + " is skipped.");
-
-        // Stop screen recording if environment is not headless
-        if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
-            try {
-                screenRecorder.stopRecording(true);
-            } catch (IOException e) {
-                LogUtils.error("Unable to stop screen recording: " + e.getMessage());
-            }
+    // Stop screen recording if environment is not headless
+    if (VIDEO_RECORD.trim().toLowerCase().equals(YES) && screenRecorder != null) {
+        WebUI.sleep(2);
+        try {
+            screenRecorder.stopRecording(true); // AWTException is the only possible exception
+        } catch (AWTException e) {
+            LogUtils.error("Unable to stop screen recording: " + e.getMessage());
         }
     }
+}
+
+@Override
+public void onTestFailure(ITestResult iTestResult) {
+    LogUtils.error("FAILED !! Test case " + getTestName(iTestResult) + " is failed.");
+    LogUtils.error(iTestResult.getThrowable());
+
+    count_failedTCs = count_failedTCs + 1;
+
+    if (SCREENSHOT_FAILED_TCS.equals(YES)) {
+        CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+        ExtentReportManager.addScreenShot(Status.FAIL, getTestName(iTestResult));
+    }
+
+    ExtentReportManager.logMessage(Status.FAIL, iTestResult.getThrowable().toString());
+
+    // Stop screen recording if environment is not headless
+    if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
+        WebUI.sleep(2);
+        try {
+            screenRecorder.stopRecording(true); // AWTException is the only possible exception
+        } catch (AWTException e) {
+            LogUtils.error("Unable to stop screen recording: " + e.getMessage());
+        }
+    }
+}
+
+@Override
+public void onTestSkipped(ITestResult iTestResult) {
+    LogUtils.warn("WARNING!! Test case: " + getTestName(iTestResult) + " is skipped.");
+    count_skippedTCs = count_skippedTCs + 1;
+
+    if (SCREENSHOT_SKIPPED_TCS.equals(YES)) {
+        CaptureHelpers.captureScreenshot(DriverManager.getDriver(), getTestName(iTestResult));
+    }
+
+    ExtentReportManager.logMessage(Status.SKIP, "Test case: " + getTestName(iTestResult) + " is skipped.");
+
+    // Stop screen recording if environment is not headless
+    if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
+        try {
+            screenRecorder.stopRecording(true); // AWTException is the only possible exception
+        } catch (AWTException e) {
+            LogUtils.error("Unable to stop screen recording: " + e.getMessage());
+        }
+    }
+}
+
 
     @Override
     public void onTestFailedButWithinSuccessPercentage(ITestResult iTestResult) {

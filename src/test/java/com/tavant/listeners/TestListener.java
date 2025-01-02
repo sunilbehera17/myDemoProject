@@ -112,7 +112,7 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
         if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
             try {
                 screenRecorder.startRecording(getTestName(iTestResult));
-            } catch (IOException | AWTException e) {
+            } catch (IOException e) {
                 LogUtils.error("Unable to start screen recording: " + e.getMessage());
             }
         }

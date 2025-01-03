@@ -30,6 +30,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
+    - uses: browser-actions/setup-chrome@latest
+    - run: chrome --version
+
     
     # Step 3: Cache Maven dependencies to speed up builds
     - name: Cache Maven dependencies

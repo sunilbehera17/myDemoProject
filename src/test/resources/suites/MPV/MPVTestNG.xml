@@ -13,7 +13,7 @@
     <!-- Other configurations -->
 
 
-    <test name="MPV test Suite" parallel="true">
+    <test name="MPV test Suite" parallel="false">
         <parameter name="BROWSER" value="chrome"/>
         <classes>
             <class name="com.tavant.mpv.testcases.MPVLoginTest"/>

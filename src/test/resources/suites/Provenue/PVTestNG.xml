@@ -11,7 +11,7 @@
         <listener class-name="com.tavant.listeners.TestListener"/>
     </listeners>
 
-	<test name="PV Login Test" parallel="true">
+	<test name="PV Login Test" parallel="false">
 		<parameter name="BROWSER" value="chrome" />
 		
 		<classes>

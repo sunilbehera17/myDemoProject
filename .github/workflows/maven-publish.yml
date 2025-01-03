@@ -30,13 +30,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    - name: Install Google Chrome 
-      run: |
-
-              chmod +x ./scripts/InstallChrome.sh
-
-                          ./scripts/InstallChrome.sh
-
+    
     # Step 3: Cache Maven dependencies to speed up builds
     - name: Cache Maven dependencies
       uses: actions/cache@v2

@@ -19,6 +19,7 @@ import com.tavant.utils.ZipUtils;
 import org.testng.*;
 
 import java.awt.*;
+import java.io.IOException;
 
 import static com.tavant.constants.FrameworkConstants.*;
 
@@ -38,7 +39,10 @@ public class TestListener implements ITestListener, ISuiteListener, IInvokedMeth
                 screenRecorder = new ScreenRecorderHelpers();
             } catch (AWTException e) {
                 LogUtils.error("Error initializing ScreenRecorderHelpers: " + e.getMessage());
-            }
+            } catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
         } else {
             LogUtils.info("Headless environment detected, screen recording will be skipped.");
         }
@@ -109,11 +113,7 @@ public void onTestStart(ITestResult iTestResult) {
 
     // Start screen recording if environment is not headless
     if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
-        try {
-            screenRecorder.startRecording(getTestName(iTestResult)); // AWTException is the only possible exception
-        } catch (AWTException e) {
-            LogUtils.error("Unable to start screen recording: " + e.getMessage());
-        }
+        screenRecorder.startRecording(getTestName(iTestResult)); // AWTException is the only possible exception
     }
 
     ExtentTestManager.setTotalTestCaseCount(count_totalTCs);
@@ -134,11 +134,7 @@ public void onTestSuccess(ITestResult iTestResult) {
     // Stop screen recording if environment is not headless
     if (VIDEO_RECORD.trim().toLowerCase().equals(YES) && screenRecorder != null) {
         WebUI.sleep(2);
-        try {
-            screenRecorder.stopRecording(true); // AWTException is the only possible exception
-        } catch (AWTException e) {
-            LogUtils.error("Unable to stop screen recording: " + e.getMessage());
-        }
+        screenRecorder.stopRecording(true); // AWTException is the only possible exception
     }
 }
 
@@ -159,11 +155,7 @@ public void onTestFailure(ITestResult iTestResult) {
     // Stop screen recording if environment is not headless
     if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
         WebUI.sleep(2);
-        try {
-            screenRecorder.stopRecording(true); // AWTException is the only possible exception
-        } catch (AWTException e) {
-            LogUtils.error("Unable to stop screen recording: " + e.getMessage());
-        }
+        screenRecorder.stopRecording(true); // AWTException is the only possible exception
     }
 }
 
@@ -180,11 +172,7 @@ public void onTestSkipped(ITestResult iTestResult) {
 
     // Stop screen recording if environment is not headless
     if (VIDEO_RECORD.toLowerCase().trim().equals(YES) && screenRecorder != null) {
-        try {
-            screenRecorder.stopRecording(true); // AWTException is the only possible exception
-        } catch (AWTException e) {
-            LogUtils.error("Unable to stop screen recording: " + e.getMessage());
-        }
+        screenRecorder.stopRecording(true); // AWTException is the only possible exception
     }
 }
 

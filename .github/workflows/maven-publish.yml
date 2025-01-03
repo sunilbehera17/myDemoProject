@@ -41,11 +41,11 @@ jobs:
 
     # Step 4: Install dependencies and build the project
     - name: Build the project with Maven
-      run: mvn clean install -DskipTests=true
+      run: mvn clean install
 
     # Step 5: Run Selenium tests using Maven and TestNG
     - name: Run Selenium Tests with Maven
-      run: mvn test -e -X
+      run: mvn test
 
     # Step 6: Upload test reports as artifacts (optional)
     - name: Upload Test Reports as Artifacts
